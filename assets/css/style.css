@@ -1126,7 +1126,7 @@ body:before {
 * {margin: 0; padding: 0;}
 
 #header-navigation[role="navigation"] {
-	background-color: #333;
+	background: #333 url(../img/classy_fabric.png) repeat;
 	font-size: 22px;
 	padding-top: 10px;
 	position: relative;
@@ -1794,6 +1794,8 @@ nav select {
 	
 	#logo {
 		margin-top: 30px;
+		max-width: 100%;
+		height: auto;
 	}
 		
 	#introduction p {
