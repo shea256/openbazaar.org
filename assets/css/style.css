@@ -223,7 +223,8 @@ blockquote cite a:visited {
 a, 
 a:visited { 
 	color: #29AAE2; 
-	text-decoration: underline; 
+	text-transform: none;
+	text-decoration: none; 
 	outline: 0;
 	-moz-transition: all .4s;
 	-webkit-transition: all .4s;
