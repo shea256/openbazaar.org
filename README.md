@@ -5,7 +5,7 @@
 
 OpenBazaar is a decentralized marketplace proof of concept. It is based off of the POC code by the darkmarket team and protected by the GPL.
 
-This is the GitHub for the official marketing site of OpenBazaar.
+This is the official GitHub of OpenBazaar's marketing site.
 
 - **Official Site:** http://openbazaar.org
 
