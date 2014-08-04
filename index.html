@@ -4,398 +4,837 @@
 
 <head>
 
-	<!-- Basic Page Needs
-  	================================================== -->
+<!-- Basic Page Needs
+================================================== -->
 
-	<meta charset="utf-8">
-	<title>OpenBazaar</title>
-	<meta name="description" content="OpenBazaar is a decentralized marketplace for instantly trading with anyone using Bitcoin.">
-	<meta name="author" content="Braden Glasgow">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="assets/js/jquery-1.11.0.min.js"></script>
-	<script src="assets/js/lightbox.min.js"></script>
-	<link rel="stylesheet" href="assets/css/lightbox.css">
+<meta charset="utf-8">
+<title>OpenBazaar</title>
+<meta name="description" content="OpenBazaar is a decentralized marketplace for instantly trading with anyone using Bitcoin.">
+<meta name="author" content="Braden Glasgow">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<link rel="stylesheet" href="assets/css/lightbox.css">
 
-	<!-- Mobile Specific Metas
-  	================================================== -->
+<!-- Mobile Specific Metas
+================================================== -->
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS (Stylesheets)
-  	================================================== -->
+<!-- CSS (Stylesheets)
+================================================== -->
 
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.css">
-	<link rel="stylesheet" href="assets/css/fancybox.css">
-	<link rel="stylesheet" href="assets/css/flexslider.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/font-awesome.css">
+<link rel="stylesheet" href="assets/css/fancybox.css">
+<link rel="stylesheet" href="assets/css/flexslider.css">
 
-	<!-- Google Web Fonts
-	================================================== -->
+<!-- Google Web Fonts
+================================================== -->
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
 
-	<!-- Favicons
-	================================================== -->
+<!-- Favicons
+================================================== -->
 
-	<link rel="shortcut icon" href="assets/img/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
 
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<![endif]-->
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<![endif]-->
 
 </head>
 
 <body>
 
-	<div class="header-background-image"></div>
+  <div class="header-background-image"></div>
 
-	<header id="header-global" role="banner">
+  <header id="header-global" role="banner">
 
-		<div class="logo-icons container">
-
-			<div class="row">
-
-					<div id="logo" align="center" style="margin-top: 10px;"><a href="index.html" title="OpenBazaar"><img src="assets/img/logo.png" alt="Header Logo" /></a></div>
-
-				</div><!-- end .header-logo -->
+    <div class="logo-icons container">
 
 
-		</div><!-- end .logo-icons container -->
+<div align="center" id="logo"><a href="index.html" title="OpenBazaar"><img src="assets/img/logo.png" alt="Header Logo" /></a></div>
 
-		<nav id="header-navigation" class="sixteen columns" role="navigation">
-			<ul id="navigation">
-				<li><a href="#header-global" title="Home">Home</a></li>
-				<li><a href="#introduction" title="About">About</a></li>
-				<li><a href="#screenshots" title="Screenshots">Screenshots</a></li>
-				<li><a href="#meet-the-team" title="The Team">The Team</a></li>
-				<li><a href="#contact" title="Contact Us">Contact</a></li>
-			</ul>
 
-			<script>
+
+</div><!-- end .logo-icons container -->
+
+<nav id="header-navigation" class="sixteen columns" role="navigation">
+<ul id="navigation">
+<li><a href="#header-global" title="Home">Home</a></li>
+<li><a href="#introduction" title="About">About</a></li>
+<li><a href="#screenshots" title="Screenshots">Screenshots</a></li>
+<li><a href="#meet-the-team" title="The Team">The Team</a></li>
+<li><a href="#blog" title="Blog">Blog</a></li>
+<li><a href="#contact" title="Contact Us">Contact</a></li>
+</ul>
+
+<script>
                $(document).ready(function(){
-	           $(window).bind('scroll', function() {
-	           var navHeight = $( window ).height() - 70;
-			    if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('fixed');
-			   }
-			 else {
-				 $('nav').removeClass('fixed');
-			 }
-	        });
-	        });
+$(window).bind('scroll', function() {
+var navHeight = $( window ).height() - 70;
+if ($(window).scrollTop() > navHeight) {
+$('nav').addClass('fixed');
+}
+else {
+$('nav').removeClass('fixed');
+}
+});
+});
             </script>
 
-			<select name="dropdown" size="1" onChange="scrollTo(this.value)">
-				<option value="" selected="selected">Navigation</option>
-				<option value="#header-global">Home</option>
-				<option value="#introduction">About</option>
-				<option value="#screenshots">Screenshots</option>
-				<option value="#meet-the-team">The Team</option>
-				<option value="#contact">Contact</option>
-			</select>
-		</nav><!-- end #header-navigation -->
+</nav><!-- end #header-navigation -->
 
-		<div class="container">
+<div class="container">
 
-			<div class="row">
+<div class="row">
 
-				<h1 id="uber-statement">Decentralized marketplace for instantly trading with anyone using Bitcoin</h1>
-				<iframe src="https://www.youtube.com/embed/w4vtUPJEmqg" frameborder="0" allowfullscreen></iframe>
+<h1 id="uber-statement">Decentralized marketplace for instantly trading with anyone using Bitcoin</h1>
+<iframe src="https://www.youtube.com/embed/w4vtUPJEmqg" frameborder="0" allowfullscreen></iframe>
 
-			</div>
+</div>
 
 
-		</div><!-- end .container -->
+</div><!-- end .container -->
 
 
-	</header><!-- end #header-global -->
+</header><!-- end #header-global -->
 
 
-	<section id="introduction">
+<section id="introduction">
 
-		<div class="container">
+<div class="container">
 
 
-			<h1>About OpenBazaar</h1>
+<h1>About OpenBazaar</h1>
 
-			<p>OpenBazaar is a decentralized marketplace proof of concept. It is based off of the POC code by the darkmarket team and protected by the GPL.</p>
+<p>OpenBazaar is a decentralized marketplace proof of concept. It is based off of the POC code by the darkmarket team and protected by the GPL.</p>
 
 
-		</div>
+</div>
 
-	</section><!-- end #introduction -->
+</section><!-- end #introduction -->
 
-	<div id="section-divider-1">
+<div id="section-divider-1">
 
 
-	<section id="screenshots">
+<section id="screenshots">
 
-		<div class="container">
+<div class="container">
 
 
-			<h1>Screenshots</h1>
+<h1>Screenshots</h1>
 
 
-			<div id="screenshot-items">
+<div id="screenshot-items">
 
-				<a class="img-light" href="assets/img/1.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/1.png" height="250"></a>
-				<a class="img-light" href="assets/img/2.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/2.png" height="250"></a>
-				<a class="img-light" href="assets/img/3.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/3.png" height="250"></a>
-				<a class="img-light" href="assets/img/4.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/4.png" height="250"></a>
-				<a class="img-light" href="assets/img/5.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/5.png" height="250"></a>
+<a class="img-light" href="assets/img/1.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/1.png" height="250"></a>
+<a class="img-light" href="assets/img/2.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/2.png" height="250"></a>
+<a class="img-light" href="assets/img/3.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/3.png" height="250"></a>
+<a class="img-light" href="assets/img/4.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/4.png" height="250"></a>
+<a class="img-light" href="assets/img/5.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/5.png" height="250"></a>
 
-			</div><!-- end #portfolio-items -->
+</div><!-- end #portfolio-items -->
 
-		</div><!-- end .container -->
+</div><!-- end .container -->
 
-	</section><!-- end #screenshots -->
+</section><!-- end #screenshots -->
 
-	<div id="section-divider-2">
+<div id="section-divider-2">
 
-		<div class="bg2"></div>
+<div class="bg2"></div>
 
-		<div class="container">
-	       <h1 style="padding-top: 55px;">Donate to OpenBazaar</h1>
-	       <img src="assets/img/btcqr.png" width="200" height="200">
-	       <p>
-	       <strong>BTC:</strong> &nbsp; <a style="color: #333; font-weight: bold; text-decoration: none;" href="https://blockchain.info/address/16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt" target="_blank">16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt</a>
-	       </p>
-			</div><!-- end .text-container -->
+<div class="container">
+<h1 style="padding-top: 55px;">Donate to OpenBazaar</h1>
+<img src="assets/img/btcqr.png" width="200" height="200">
+<p>
+<strong>BTC:</strong> &nbsp; <a style="color: #333; font-weight: bold; text-decoration: none;" href="https://blockchain.info/address/16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt" target="_blank">16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt</a>
+</p>
+</div><!-- end .text-container -->
 
 
 
 
-	</div><!-- end #section-divider-3 -->
+</div><!-- end #section-divider-3 -->
 
-	<section id="meet-the-team">
+<section id="meet-the-team">
 
-		<div class="container">
+<div class="container">
 
 
-			<h1>We have an awesome team of contributors onboard!</h1>
+<h1>We have an awesome team of contributors onboard!</h1>
 
 
-			<div id="team-members">
+<div id="team-members">
 
-				<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-					    <div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
-					<h2>Brian Hoffman</h2>
+<h2>Brian Hoffman</h2>
 
-					<p><em>Project Lead</em></p>
+<p><em>Project Lead</em></p>
 
-					<p>He forks therefore he leads. Brian is the lead dev and responsible for making sure the project is running smoothly.</p>
+<p>He forks therefore he leads. Brian is the lead dev and responsible for making sure the project is running smoothly.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-				<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-					    <div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>Sam Patterson</h2>
+<h2>Sam Patterson</h2>
 
-					<p><em>Operations Lead</em></p>
+<p><em>Operations Lead</em></p>
 
-					<p>Sam is the operational support lead for the project and is also documenting the accomplishments and challenges of the team as we progress.</p>
+<p>Sam is the operational support lead for the project and is also documenting the accomplishments and challenges of the team as we progress.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-				<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-	                    <div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>Washington Sanchez</h2>
+<h2>Washington Sanchez</h2>
 
-					<p><em>Contract and Market Development</em></p>
+<p><em>Contract and Market Development</em></p>
 
-					<p>Dr. Sanchez focuses on the design &amp; development of OpenBazaar's Ricardian contract system and the implementation of various markets on the OB platform.</p>
+<p>Dr. Sanchez focuses on the design &amp; development of OpenBazaar's Ricardian contract system and the implementation of various markets on the OB platform.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-								<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-						<div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>Jonas Nick</h2>
+<h2>Jonas Nick</h2>
 
-					<p><em>Developer</em></p>
+<p><em>Developer</em></p>
 
-					<p>Experienced Python &amp; ZeroMQ developer working on p2p and unit testing code.</p>
+<p>Experienced Python &amp; ZeroMQ developer working on p2p and unit testing code.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-								<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-						<div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>Delain Markos</h2>
+<h2>Delain Markos</h2>
 
-					<p><em>Developer &amp; Contracts Specialist</em></p>
+<p><em>Developer &amp; Contracts Specialist</em></p>
 
-					<p>Lead Dev for the HTML5 contract generation tool and thought leader for contracts.</p>
+<p>Lead Dev for the HTML5 contract generation tool and thought leader for contracts.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-									<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-					    <div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>Braden Glasgow</h2>
+<h2>Braden Glasgow</h2>
 
-					<p><em>Web Development Lead</em></p>
+<p><em>Web Development Lead</em></p>
 
-					<p>Braden focuses on any web-oriented development, such as the OpenBazaar website, and any other web-based features required by OpenBazaar.</p>
+<p>Braden focuses on any web-oriented development, such as the OpenBazaar website, and any other web-based features required by OpenBazaar.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-										<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-					    <div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>Dionysis Zindros</h2>
+<h2>Dionysis Zindros</h2>
 
-					<p><em>Developer</em></p>
+<p><em>Developer</em></p>
 
-					<p>Dionysis develops the decentralized web-of-trust and identity system of OpenBazaar.</p>
+<p>Dionysis develops the decentralized web-of-trust and identity system of OpenBazaar.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
-				<div class="team-member one-third column">
+<div class="team-member one-third column">
 
-					    <div class="thumbnail">
+<div class="thumbnail">
 
-					</div>
+</div>
 
 
-					<h2>George Chatzisofroniou</h2>
+<h2>George Chatzisofroniou</h2>
 
-					<p><em>Developer</em></p>
+<p><em>Developer</em></p>
 
-					<p>George implements desired features and tackles bugs all over OpenBazaar's
+<p>George implements desired features and tackles bugs all over OpenBazaar's
 codebase.</p>
 
 
-				</div><!-- end .team-member -->
+</div><!-- end .team-member -->
 
 
-			</div><!-- end #team-members -->
+</div><!-- end #team-members -->
 
 
-		</div><!-- end .container -->
+</div><!-- end .container -->
 
-	</section><!-- end #meet-the-team -->
+</section><!-- end #meet-the-team -->
 
-	<footer id="footer-global" role="contentinfo" class="clearfix">
+<section id="blog"><br />
 
-		<section id="contact">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="sixteen columns">
+<div class="container">
 
 
-						<h1>Contact</h1>
+<h1>Blog</h1>
+<h3>Latest blog entry</h3>
 
-						<p>Contact the project at</p>
+<script src="http://feeds.feedburner.com/Openbazaar?format=sigpro" type="text/javascript" ></script>
 
-						<address id="contact-details">
 
-							<p><a href="mailto:project@openbazaar.org">project@openbazaar.org</a>
+</div>
 
-						</address>
+</section><!-- end #blog --><br />
 
-					</div>
+<footer id="footer-global" role="contentinfo" class="clearfix">
 
-				</div><!-- end .row -->
+<section id="contact">
 
-		        <div class="row">
+<div class="container">
 
-					<div class="sixteen columns">
+<div class="row">
 
-						<ul class="social-icons footer">
+<div class="sixteen columns">
 
-							<li><a href="http://github.com/OpenBazaar/OpenBazaar" title="" target="_blank">GitHub</a></li>
-							<li><a href="http://tip4commit.com/projects/728" title="" target="_blank">Tip4Commit</a></li>
-							<li><a href="http://unsystem.net/" title="" target="_blank">UnSystem</a></li>
-							<li><a href="http://github.com/OpenBazaar/OpenBazaar/wiki" title="" target="_blank">Wiki</a></li>
-							<li><a href="http://forum.openbazaar.org/" title="" target="_blank">Forum</a></li>
+
+<h1>Contact</h1>
+
+<p>Contact the project at</p>
+
+<address id="contact-details">
+
+<p><a href="mailto:project@openbazaar.org">project@openbazaar.org</a></p>
+
+</address>
+
+</div>
+
+</div><!-- end .row -->
+
+<div class="row">
+
+<div class="sixteen columns">
+
+<ul class="social-icons footer">
+
+<li><a href="http://github.com/OpenBazaar/OpenBazaar" title="" target="_blank">GitHub</a></li>
+<li><a href="http://tip4commit.com/projects/728" title="" target="_blank">Tip4Commit</a></li>
+<li><a href="http://unsystem.net/" title="" target="_blank">UnSystem</a></li>
+<li><a href="http://github.com/OpenBazaar/OpenBazaar/wiki" title="" target="_blank">Wiki</a></li>
+<li><a href="http://forum.openbazaar.org/" title="" target="_blank">Forum</a></li>
                                                         <li><a href="http://blog.openbazaar.org/" title="" target="_blank">Blog</a></li>
-						</ul>
+</ul>
 
-					</div>
+</div>
 
-				</div><!-- end .row -->
-				<hr /><br /><br />
+</div><!-- end .row -->
+<hr /><br /><br />
 
-				 <div class="row">
+<div class="row">
 
-					<div class="sixteen columns">
+<div class="sixteen columns">
 
-					<h3>As seen on</h3>
+<h3>As seen on</h3>
 
-						<ul class="social-icons footer">
+<ul class="social-icons footer">
 
-							<li><a href="http://www.wired.co.uk/news/archive/2014-04/25/darkmarket-prototype" title="" target="_blank">Wired</a></li>
-							<li><a href="http://cointelegraph.com/news/111332/what_s_in_a_word_darkmarket_becomes_openbazaar#.U2IWgfl_tqU" title="" target="_blank">CoinTelegraph</a></li>
-							<li><a href="http://www.coindesk.com/openbazaar-bitcoin-build-decentralised-ebay/" title="" target="_blank">CoinDesk</a></li>
-							<li><a href="http://www.ibtimes.co.uk/silk-road-successor-darkmarket-untouchable-by-feds-claim-creators-1446241" title="" target="_blank">IBTimes</a></li>
-							<li><a href="http://www.deepdotweb.com/2014/06/23/openbazaar-a-decentralized-alternative/" title="" target="_blank">DeepDotWeb</a></li>
+<li><a href="http://www.wired.co.uk/news/archive/2014-04/25/darkmarket-prototype" title="" target="_blank">Wired</a></li>
+<li><a href="http://cointelegraph.com/news/111332/what_s_in_a_word_darkmarket_becomes_openbazaar#.U2IWgfl_tqU" title="" target="_blank">CoinTelegraph</a></li>
+<li><a href="http://www.coindesk.com/openbazaar-bitcoin-build-decentralised-ebay/" title="" target="_blank">CoinDesk</a></li>
+<li><a href="http://www.ibtimes.co.uk/silk-road-successor-darkmarket-untouchable-by-feds-claim-creators-1446241" title="" target="_blank">IBTimes</a></li>
+<li><a href="http://www.deepdotweb.com/2014/06/23/openbazaar-a-decentralized-alternative/" title="" target="_blank">DeepDotWeb</a></li>
 
-						</ul>
+</ul>
 
-					</div>
+</div>
 
-				</div><!-- end .row -->
+</div><!-- end .row -->
 
-				<div class="row">
+<div class="row">
 
-					<div class="sixteen columns">
+<div class="sixteen columns">
 
-			  			<p id="copyright-details">Design by Braden Glasgow</p>
+<p id="copyright-details">Design by Braden Glasgow</p>
 
-			  		</div>
+</div>
 
-			  	</div><!-- end .row -->
+</div><!-- end .row -->
 
-			</div><!-- end .container -->
+</div><!-- end .container -->
 
-		</section><!-- end #contact -->
+</section><!-- end #contact -->
 
-	</footer><!-- end #footer-global -->
+</footer><!-- end #footer-global -->
+
+<script type="text/javascript">
+function scrollTo(target) {
+    var targetPosition = $(target).offset().top;
+    $('html,body').animate({
+        scrollTop: targetPosition
+    }, 'slow');
+}
+</script>
+
+<!-- JS (Javascript Files)
+================================================== -->
+
+<script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+<script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="assets/js/jquery.isotope.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.quote.rotator.min.js"></script>
+<script src="assets/js/jquery.flexslider.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/jquery.fitvids.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+
+
+</html><!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+
+<meta charset="utf-8">
+<title>OpenBazaar</title>
+<meta name="description" content="OpenBazaar is a decentralized marketplace for instantly trading with anyone using Bitcoin.">
+<meta name="author" content="Braden Glasgow">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<link rel="stylesheet" href="assets/css/lightbox.css">
+
+<!-- Mobile Specific Metas
+================================================== -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS (Stylesheets)
+================================================== -->
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/font-awesome.css">
+<link rel="stylesheet" href="assets/css/fancybox.css">
+<link rel="stylesheet" href="assets/css/flexslider.css">
+
+<!-- Google Web Fonts
+================================================== -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+
+<!-- Favicons
+================================================== -->
+
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="header-background-image"></div>
+
+  <header id="header-global" role="banner">
+
+    <div class="logo-icons container">
+
+
+<div align="center" id="logo"><a href="index.html" title="OpenBazaar"><img src="assets/img/logo.png" alt="Header Logo" /></a></div>
+
+
+
+</div><!-- end .logo-icons container -->
+
+<nav id="header-navigation" class="sixteen columns" role="navigation">
+<ul id="navigation">
+<li><a href="#header-global" title="Home">Home</a></li>
+<li><a href="#introduction" title="About">About</a></li>
+<li><a href="#screenshots" title="Screenshots">Screenshots</a></li>
+<li><a href="#meet-the-team" title="The Team">The Team</a></li>
+<li><a href="#blog" title="Blog">Blog</a></li>
+<li><a href="#contact" title="Contact Us">Contact</a></li>
+</ul>
+
+<script>
+               $(document).ready(function(){
+$(window).bind('scroll', function() {
+var navHeight = $( window ).height() - 70;
+if ($(window).scrollTop() > navHeight) {
+$('nav').addClass('fixed');
+}
+else {
+$('nav').removeClass('fixed');
+}
+});
+});
+            </script>
+
+</nav><!-- end #header-navigation -->
+
+<div class="container">
+
+<div class="row">
+
+<h1 id="uber-statement">Decentralized marketplace for instantly trading with anyone using Bitcoin</h1>
+<iframe src="https://www.youtube.com/embed/w4vtUPJEmqg" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+
+</div><!-- end .container -->
+
+
+</header><!-- end #header-global -->
+
+
+<section id="introduction">
+
+<div class="container">
+
+
+<h1>About OpenBazaar</h1>
+
+<p>OpenBazaar is a decentralized marketplace proof of concept. It is based off of the POC code by the darkmarket team and protected by the GPL.</p>
+
+
+</div>
+
+</section><!-- end #introduction -->
+
+<div id="section-divider-1">
+
+
+<section id="screenshots">
+
+<div class="container">
+
+
+<h1>Screenshots</h1>
+
+
+<div id="screenshot-items">
+
+<a class="img-light" href="assets/img/1.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/1.png" height="250"></a>
+<a class="img-light" href="assets/img/2.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/2.png" height="250"></a>
+<a class="img-light" href="assets/img/3.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/3.png" height="250"></a>
+<a class="img-light" href="assets/img/4.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/4.png" height="250"></a>
+<a class="img-light" href="assets/img/5.png" data-lightbox="screenshot"><img style="border: gray 1px solid; margin: 8px;" src="assets/img/5.png" height="250"></a>
+
+</div><!-- end #portfolio-items -->
+
+</div><!-- end .container -->
+
+</section><!-- end #screenshots -->
+
+<div id="section-divider-2">
+
+<div class="bg2"></div>
+
+<div class="container">
+<h1 style="padding-top: 55px;">Donate to OpenBazaar</h1>
+<img src="assets/img/btcqr.png" width="200" height="200">
+<p>
+<strong>BTC:</strong> &nbsp; <a style="color: #333; font-weight: bold; text-decoration: none;" href="https://blockchain.info/address/16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt" target="_blank">16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt</a>
+</p>
+</div><!-- end .text-container -->
+
+
+
+
+</div><!-- end #section-divider-3 -->
+
+<section id="meet-the-team">
+
+<div class="container">
+
+
+<h1>We have an awesome team of contributors onboard!</h1>
+
+
+<div id="team-members">
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+<h2>Brian Hoffman</h2>
+
+<p><em>Project Lead</em></p>
+
+<p>He forks therefore he leads. Brian is the lead dev and responsible for making sure the project is running smoothly.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>Sam Patterson</h2>
+
+<p><em>Operations Lead</em></p>
+
+<p>Sam is the operational support lead for the project and is also documenting the accomplishments and challenges of the team as we progress.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>Washington Sanchez</h2>
+
+<p><em>Contract and Market Development</em></p>
+
+<p>Dr. Sanchez focuses on the design &amp; development of OpenBazaar's Ricardian contract system and the implementation of various markets on the OB platform.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>Jonas Nick</h2>
+
+<p><em>Developer</em></p>
+
+<p>Experienced Python &amp; ZeroMQ developer working on p2p and unit testing code.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>Delain Markos</h2>
+
+<p><em>Developer &amp; Contracts Specialist</em></p>
+
+<p>Lead Dev for the HTML5 contract generation tool and thought leader for contracts.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>Braden Glasgow</h2>
+
+<p><em>Web Development Lead</em></p>
+
+<p>Braden focuses on any web-oriented development, such as the OpenBazaar website, and any other web-based features required by OpenBazaar.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>Dionysis Zindros</h2>
+
+<p><em>Developer</em></p>
+
+<p>Dionysis develops the decentralized web-of-trust and identity system of OpenBazaar.</p>
+
+
+</div><!-- end .team-member -->
+
+<div class="team-member one-third column">
+
+<div class="thumbnail">
+
+</div>
+
+
+<h2>George Chatzisofroniou</h2>
+
+<p><em>Developer</em></p>
+
+<p>George implements desired features and tackles bugs all over OpenBazaar's
+codebase.</p>
+
+
+</div><!-- end .team-member -->
+
+
+</div><!-- end #team-members -->
+
+
+</div><!-- end .container -->
+
+</section><!-- end #meet-the-team -->
+
+<section id="blog"><br />
+
+<div class="container">
+
+
+<h1>Blog</h1>
+<h3>Latest blog entry</h3>
+
+<script src="http://feeds.feedburner.com/Openbazaar?format=sigpro" type="text/javascript" ></script>
+
+
+</div>
+
+</section><!-- end #blog --><br />
+
+<footer id="footer-global" role="contentinfo" class="clearfix">
+
+<section id="contact">
+
+<div class="container">
+
+<div class="row">
+
+<div class="sixteen columns">
+
+
+<h1>Contact</h1>
+
+<p>Contact the project at</p>
+
+<address id="contact-details">
+
+<p><a href="mailto:project@openbazaar.org">project@openbazaar.org</a></p>
+
+</address>
+
+</div>
+
+</div><!-- end .row -->
+
+<div class="row">
+
+<div class="sixteen columns">
+
+<ul class="social-icons footer">
+
+<li><a href="http://github.com/OpenBazaar/OpenBazaar" title="" target="_blank">GitHub</a></li>
+<li><a href="http://tip4commit.com/projects/728" title="" target="_blank">Tip4Commit</a></li>
+<li><a href="http://unsystem.net/" title="" target="_blank">UnSystem</a></li>
+<li><a href="http://github.com/OpenBazaar/OpenBazaar/wiki" title="" target="_blank">Wiki</a></li>
+<li><a href="http://forum.openbazaar.org/" title="" target="_blank">Forum</a></li>
+                                                        <li><a href="http://blog.openbazaar.org/" title="" target="_blank">Blog</a></li>
+</ul>
+
+</div>
+
+</div><!-- end .row -->
+<hr /><br /><br />
+
+<div class="row">
+
+<div class="sixteen columns">
+
+<h3>As seen on</h3>
+
+<ul class="social-icons footer">
+
+<li><a href="http://www.wired.co.uk/news/archive/2014-04/25/darkmarket-prototype" title="" target="_blank">Wired</a></li>
+<li><a href="http://cointelegraph.com/news/111332/what_s_in_a_word_darkmarket_becomes_openbazaar#.U2IWgfl_tqU" title="" target="_blank">CoinTelegraph</a></li>
+<li><a href="http://www.coindesk.com/openbazaar-bitcoin-build-decentralised-ebay/" title="" target="_blank">CoinDesk</a></li>
+<li><a href="http://www.ibtimes.co.uk/silk-road-successor-darkmarket-untouchable-by-feds-claim-creators-1446241" title="" target="_blank">IBTimes</a></li>
+<li><a href="http://www.deepdotweb.com/2014/06/23/openbazaar-a-decentralized-alternative/" title="" target="_blank">DeepDotWeb</a></li>
+
+</ul>
+
+</div>
+
+</div><!-- end .row -->
+
+<div class="row">
+
+<div class="sixteen columns">
+
+<p id="copyright-details">Design by Braden Glasgow</p>
+
+</div>
+
+</div><!-- end .row -->
+
+</div><!-- end .container -->
+
+</section><!-- end #contact -->
+
+</footer><!-- end #footer-global -->
 
 <script type="text/javascript">
 function scrollTo(target) {
