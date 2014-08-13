@@ -7,7 +7,7 @@ OpenBazaar is a decentralized marketplace proof of concept. It is based off of t
 
 This is the official GitHub of OpenBazaar's marketing site.
 
-- **Official Site:** http://openbazaar.org
+- **Official Site:** https://openbazaar.org
 
 ## Support
 You can financially support the project by either:
