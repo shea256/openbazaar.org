@@ -319,7 +319,8 @@
 
           <div class="sixteen columns">
 
-            <ul class="social-icons footer">
+            <div id="contact-style">
+            <ul>
 
               <li><a href="http://github.com/OpenBazaar/OpenBazaar" title="" target="_blank">GitHub</a></li>
               <li><a href="http://tip4commit.com/projects/728" title="" target="_blank">Tip4Commit</a></li>
@@ -327,29 +328,32 @@
               <li><a href="http://github.com/OpenBazaar/OpenBazaar/wiki" title="" target="_blank">Wiki</a></li>
               <li><a href="http://forum.openbazaar.org/" title="" target="_blank">Forum</a></li>
               <li><a href="http://blog.openbazaar.org/" title="" target="_blank">Blog</a></li>
+
             </ul>
+            </div>
 
           </div>
 
-        </div><!-- end .row -->
-  <hr /><br /><br />
+        </div><!-- end .row --><br />
+
 
         <div class="row">
 
           <div class="sixteen columns">
 
             <h3>As seen on</h3>
-
-            <ul class="social-icons footer">
-
-              <li><a href="http://www.wired.co.uk/news/archive/2014-04/25/darkmarket-prototype" title="" target="_blank">Wired</a></li>
-              <li><a href="http://cointelegraph.com/news/111332/what_s_in_a_word_darkmarket_becomes_openbazaar#.U2IWgfl_tqU" title="" target="_blank">CoinTelegraph</a></li>
+            
+            <div id="press-style">
+            <ul>
+              
               <li><a href="http://www.coindesk.com/openbazaar-bitcoin-build-decentralised-ebay/" title="" target="_blank">CoinDesk</a></li>
+              <li><a href="http://www.wired.com/2014/04/darkmarket/" title="" target="_blank">Wired</a></li>
+              <li><a href="http://cointelegraph.com/news/111332/what_s_in_a_word_darkmarket_becomes_openbazaar#.U2IWgfl_tqU" title="" target="_blank">CoinTelegraph</a></li>
               <li><a href="http://www.ibtimes.co.uk/silk-road-successor-darkmarket-untouchable-by-feds-claim-creators-1446241" title="" target="_blank">IBTimes</a></li>
               <li><a href="http://www.deepdotweb.com/2014/06/23/openbazaar-a-decentralized-alternative/" title="" target="_blank">DeepDotWeb</a></li>
 
             </ul>
-
+            </div>
           </div>
 
         </div><!-- end .row -->
@@ -397,7 +401,7 @@
   <script src="assets/js/feed.js"></script>
   <script src="assets/js/lightbox.min.js"></script>
     <script type="text/javascript">
-      $.jGFeed('https://blog.openbazaar.org/feed',
+      $.blogFeed('https://blog.openbazaar.org/feed',
           function(feeds){
               if(!feeds){
                   alert('there was an error');

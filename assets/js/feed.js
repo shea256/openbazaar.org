@@ -1,6 +1,6 @@
 (function($){
 $.extend({
-jGFeed : function(url, fnk, num, key){
+blogFeed : function(url, fnk, num, key){
 // Make sure url to get is defined
 if(url == null) return false;
 // Build Google Feed API URL

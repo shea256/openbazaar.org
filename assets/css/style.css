@@ -43,6 +43,15 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	position: relative;
 }
 
+#press-style ul li{
+	display: inline;
+	margin: 4px;
+}
+
+#contact-style ul li{
+	display: inline;
+	margin: 4px;
+}
 article, 
 aside, 
 details, 
