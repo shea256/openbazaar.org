@@ -20,7 +20,6 @@
     <!-- CSS (Stylesheets) -->
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
 
 
     <!-- Google Web Fonts -->
@@ -30,7 +29,7 @@
 
     <!-- Favicons -->
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -51,7 +50,7 @@
 
 
 
-      </div><!-- end .logo-icons container -->
+      </div><!-- end logo container -->
 
       <nav id="header-navigation" class="sixteen columns" role="navigation">
         <ul id="navigation">
@@ -84,7 +83,7 @@
       <div class="row">
 
         <h1 id="uber-statement">Decentralized marketplace for instantly trading with anyone using Bitcoin</h1>
-        <video class="center" src="assets/video/OpenBazaar_Final.mp4" width="800" height="450" controls poster="assets/img/poster.png"></video>
+        <video class="center" type="video/mp4" src="assets/video/OpenBazaar_Final.mp4" width="800" height="450" controls poster="assets/img/poster.png"></video>
 
       </div>
 
@@ -119,11 +118,18 @@
 
         <div id="screenshot-items">
 
-          <a class="img-light" href="assets/img/screen_1.png" data-lightbox="screenshot"><img style="border: #DBDBDB 2px solid; margin: 8px;" src="assets/img/screen_1.png" height="300" width="450"></a>
-          <a class="img-light" href="assets/img/screen_2.png" data-lightbox="screenshot"><img style="border: #DBDBDB 2px solid; margin: 8px;" src="assets/img/screen_2.png" height="300" width="450"></a>
-          <a class="img-light" href="assets/img/screen_3.png" data-lightbox="screenshot"><img style="border: #DBDBDB 2px solid; margin: 8px;" src="assets/img/screen_3.png" height="300" width="450"></a>
-          <a class="img-light" href="assets/img/screen_4.png" data-lightbox="screenshot"><img style="border: #DBDBDB 2px solid; margin: 8px;" src="assets/img/screen_4.png" height="300" width="450"></a>
-          <a class="img-light" href="assets/img/screen_5.png" data-lightbox="screenshot"><img style="border: #DBDBDB 2px solid; margin: 8px;" src="assets/img/screen_5.png" height="300" width="450"></a>
+            <div class="container">
+              <div id="slides">
+                 <img src="assets/img/screen_1.png" />
+                 <img src="assets/img/screen_2.png" />
+                 <img src="assets/img/screen_3.png" />
+                 <img src="assets/img/screen_4.png" />
+                 <img src="assets/img/screen_5.png" />
+                 <img class="slidesjs-previous slidesjs-navigation" src="assets/img/prev_arrow.png" width="35" height="35" />
+                 &nbsp;
+                 <img class="slidesjs-next slidesjs-navigation" src="assets/img/next_arrow.png" width="35" height="35" />
+              </div>
+            </div>
 
         </div><!-- end #screenshot-items -->
 
@@ -373,7 +379,7 @@
 
       </div>
 
-    </div><!-- end .row --></div></div>
+    </div><!-- end .row --></div></div></div>
 
   <script type="text/javascript">
     function scrollTo(target) {
@@ -399,31 +405,57 @@
   <script src="assets/js/jquery.sticky.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/feed.js"></script>
-  <script src="assets/js/lightbox.min.js"></script>
-    <script type="text/javascript">
+  <script src="assets/js/jquery.slides.js"></script>
+  
+  <!-- Blog Section Required -->
+  <script type="text/javascript">
       $.blogFeed('https://blog.openbazaar.org/feed',
-          function(feeds){
-              if(!feeds){
-                  alert('there was an error');
+         function(feeds){
+            if(!feeds){
+               alert('there was an error');
             }
-              for(var i=0;i<feeds.entries.length;i++){
-                  var entry = feeds.entries[i];
-                  var title = entry.title;
-                  var link = entry.link;
-                  var description = entry.contentSnippet;
+            for(var i=0;i<feeds.entries.length;i++){
+               var entry = feeds.entries[i];
+               var title = entry.title;
+               var link = entry.link;
+               var description = entry.contentSnippet;
  
  
-                  var html = "<div class='entry'><h4 class='postTitle'><a class='fancy block' href='" + link + "' target='_blank'>" +   title + "</a></h4>";
-                  html += "<p class='description'>" + description + "</p></div>";
+               var html = "<div class='entry'><h4 class='postTitle'><a class='fancy block' href='" + link + "' target='_blank'>" +   title + "</a></h4>";
+                   html += "<p class='description'>" + description + "</p></div>";
  
  
-                  $("#feedContent").append($(html));
+            $("#feedContent").append($(html));
               }
           }, 1);
   </script>
+  <!-- End Blog Section Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+     $(function(){
+     $("#slides").slidesjs({
+        navigation: {
+          active: false,
+
+        effect: "slide"
+      }
+    });
+  });
+  </script>
+
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+
+        width: 940,
+        height: 550
+
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
   
-
   </body>
-
 
 </html>
