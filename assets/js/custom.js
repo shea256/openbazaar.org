@@ -55,9 +55,10 @@ jQuery(document).ready(function ($) {
 	
 	/* Sticky Navigation
 	--------------------------------------------------*/
-	
-	$("#header-navigation").sticky({topSpacing:0});
-	
+
+	if( $(this).width() > 599 ){ 
+		$("#header-navigation").sticky({topSpacing:0});
+	}	
 	/* FancyBox (Lightbox)
 	--------------------------------------------------*/
 	

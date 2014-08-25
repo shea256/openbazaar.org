@@ -1,0 +1,21 @@
+/* 3 - Body (Global Styles)
+================================================== */
+
+body {
+  font: 24px/36px 'Cabin', sans-serif;
+  color: #444;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Slight fix for IOS devices */
+@include breakpoint($breakpoint-lg){
+  .header-background-image, 
+  .bg1, 
+  .bg2, 
+  .bg3 {
+    background-attachment: fixed!important;
+  }
+
+}

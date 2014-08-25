@@ -1,0 +1,51 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+/*------------------------------------*\
+    $Breakpoint Settings
+\*------------------------------------*/
+
+$breakpoint-default-media: 'all';
+$breakpoint-default-feature: 'min-width';
+$breakpoint-default-pair: 'width';
+$breakpoint-to-ems: true; //false is default
+
+//Declare breakpoint values here
+$breakpoint-px-val--sm: 599px;
+$breakpoint-px-val--md: 600px;
+$breakpoint-px-val--lg: 960px;
+$breakpoint-px-val--xlg: 1200px;
+
+//Breakpoint mixin variables:
+$breakpoint-sm: min-width $breakpoint-px-val--sm;  //converted to ems automagically
+$breakpoint-md: min-width $breakpoint-px-val--md; //converted to ems automagically
+$breakpoint-lg: min-width $breakpoint-px-val--lg; //converted to ems automagically
+$breakpoint-xlg: min-width $breakpoint-px-val--xlg; //converted to ems automagically
+
+/*------------------------------------*\
+    $Grid/Structure values
+\*------------------------------------*/
+
+$total-columns-sm:  4;
+// $column-width-sm:   stripAndPxToEms(55px);
+$gutter-width-sm:   stripAndPxToEms(20px); //space between columns
+$grid-padding-sm:   stripAndPxToEms(0px);
+
+$total-columns-md:  8;
+// $column-width-md:   stripAndPxToEms(61px);
+$gutter-width-md:   stripAndPxToEms(16px); //space between columns
+$grid-padding-md:   stripAndPxToEms(0px);
+
+$total-columns-lg:  12;
+// $column-width-lg:   stripAndPxToEms(67px);
+$gutter-width-lg:   stripAndPxToEms(20px); //space between columns
+$grid-padding-lg:   stripAndPxToEms(0px);
+
+
+/*------------------------------------*\
+    $Colors
+\*------------------------------------*/
+
