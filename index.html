@@ -39,51 +39,41 @@
 
   <body>
 
-    <div class="header-background-image"></div>
+    <div class="cover-bg header-background-image"></div>
 
     <header id="header-global" role="banner">
 
-      <div class="logo container">
+      <div class="container logo__wrapper">
 
 
-        <div align="center" id="logo"><a href="index.html" title="OpenBazaar"><img src="assets/img/logo.png" alt="Header Logo" /></a></div>
+        <div align="center" id="logo">
+          <a href="index.html" title="OpenBazaar">
+            <img class="logo__img" src="assets/img/logo.png" alt="Header Logo" />
+          </a>
+        </div>
 
 
 
       </div><!-- end logo container -->
 
-      <nav id="header-navigation" class="sixteen columns" role="navigation">
-        <ul id="navigation">
-          <li><a href="#header-global" title="Home">Home</a></li>
-          <li><a href="#introduction" title="About">About</a></li>
-          <li><a href="#screenshots" title="Screenshots">Screenshots</a></li>
-          <li><a href="#meet-the-team" title="The Team">The Team</a></li>
-          <li><a href="#blog" title="Blog">Blog</a></li>
-          <li><a href="#contact" title="Contact Us">Contact</a></li>
+      <nav class="clearfix" id="header-navigation" role="navigation">
+        <ul class="container" id="navigation">
+          <li class="navigation__item"><a href="#header-global" title="Home">Home</a></li>
+          <li class="navigation__item"><a href="#introduction" title="About">About</a></li>
+          <li class="navigation__item"><a href="#screenshots" title="Screenshots">Screenshots</a></li>
+          <li class="navigation__item"><a href="#meet-the-team" title="The Team">The Team</a></li>
+          <li class="navigation__item"><a href="#blog" title="Blog">Blog</a></li>
+          <li class="navigation__item"><a href="#contact" title="Contact Us">Contact</a></li>
         </ul>
-
-   <script>
-     $(document).ready(function(){
-     $(window).bind('scroll', function() {
-     var navHeight = $( window ).height() - 70;
-     if ($(window).scrollTop() > navHeight) {
-     $('nav').addClass('fixed');
-     }
-     else {
-     $('nav').removeClass('fixed');
-     }
-     });
-     });
-   </script>
 
      </nav><!-- end #header-navigation -->
 
-    <div class="container">
+    <div class="container video__wrapper">
 
       <div class="row">
 
         <h1 id="uber-statement">Decentralized marketplace for instantly trading with anyone using Bitcoin</h1>
-        <video class="center" type="video/mp4" src="assets/video/OpenBazaar_Final.mp4" width="800" height="450" controls poster="assets/img/poster.png"></video>
+        <video class="center video--player" type="video/mp4" src="assets/video/OpenBazaar_Final.mp4" controls poster="assets/img/poster.png"></video>
 
       </div>
 
@@ -92,7 +82,7 @@
 
     </header><!-- end #header-global -->
 
-    <section id="introduction">
+    <section id="introduction" class="section-padding">
 
       <div class="container">
 
@@ -108,7 +98,7 @@
     <div id="section-divider-1">
 
 
-    <section id="screenshots">
+    <section id="screenshots" class="section-padding">
 
       <div class="container">
 
@@ -139,20 +129,23 @@
 
     <div id="section-divider-2">
 
-    <div class="bg2"></div>
+      <div class="cover-bg section-padding">
 
-    <div class="container">
+        <div class="container">
 
-      <h1 style="padding-top: 55px;">Donate to OpenBazaar</h1>
-      <img src="assets/img/btcqr.png" width="200" height="200">
-      <p><strong>BTC:</strong> &nbsp; <a style="color: #333; font-weight: bold; text-decoration: none;" href="https://blockchain.info/address/16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt" target="_blank">16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt</a></p>
+          <h1 class="donate--headline">Donate to OpenBazaar</h1>
+          <img src="assets/img/btcqr.png" width="200" height="200">
+          <p><strong>BTC:</strong> &nbsp; 
+            <a class="donate--link" href="https://blockchain.info/address/16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt" target="_blank">16uniUFpbhrAxAWMZ9qEkcT9Wf34ETB4Tt</a>
+          </p>
 
-    </div><!-- end .text-container -->
-
+        </div><!-- end .text-container -->
+      
+      </div>
 
     </div>
 
-    <section id="meet-the-team">
+    <section id="meet-the-team" class="section-padding">
 
       <div class="container">
 
@@ -175,7 +168,7 @@
 
           </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -189,7 +182,7 @@
 
         </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -203,7 +196,7 @@
 
         </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -217,7 +210,7 @@
 
         </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -231,7 +224,7 @@
 
         </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -246,7 +239,7 @@
         </div><!-- end .team-member -->
 
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -260,7 +253,7 @@
 
         </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -275,7 +268,7 @@
 
         </div><!-- end .team-member -->
 
-        <div class="team-member one-third column">
+        <div class="team-member">
 
           <div class="thumbnail"></div>
 
@@ -296,13 +289,13 @@
 
     </section><!-- end #meet-the-team -->
 
-    <section id="blog">
+    <section id="blog" class="section-padding">
 
       <div class="container">
    
-        <h1>Blog</h1>
+        <h1 class="blog--headline">Blog</h1>
         <h2>Latest blog post (click title to read more)</h2>
-        <div style="max-width: 80%; margin: 0 auto;" id="feedContent"></div>
+        <div class="blog__excerpt" id="feedContent"></div>
 
       </div>
     </section>
@@ -311,13 +304,13 @@
 
     <footer id="footer-global" role="contentinfo" class="clearfix">
 
-    <section id="contact">
+    <section id="contact" class="section-padding">
 
       <div class="container">
 
         <div class="row">
 
-          <div class="sixteen columns">
+          <div class="">
 
 
             <h1>Contact</h1>
@@ -336,7 +329,7 @@
 
         <div class="row">
 
-          <div class="sixteen columns">
+          <div class="">
 
             <div id="contact-style">
             <ul>
@@ -355,10 +348,9 @@
 
         </div><!-- end .row --><br />
 
-
         <div class="row">
 
-          <div class="sixteen columns">
+          <div class="">
 
             <h3>As seen on</h3>
             
@@ -386,7 +378,7 @@
 
     <div class="row">
 
-      <div class="sixteen columns">
+      <div class="">
 
         <p style="font-size: 15px;">&copy; <a href="index.html">OpenBazaar</a> | Design by Braden Glasgow</p>
 
