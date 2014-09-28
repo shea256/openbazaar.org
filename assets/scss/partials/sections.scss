@@ -9,6 +9,26 @@
   @extend .box-shadow;
 }
 
+
+/* Section (In the Press)
+--------------------------------------------------*/
+#press-style ul {
+  margin: 60px 0 20px;
+}
+#press-style ul li {
+  display: inline-block;
+  width: 16%;
+}
+#press-style ul li a {
+  display: block;
+  text-align: center;
+}
+#press-style ul li a img {
+  display: block;
+  width: 100%;
+}
+
+
 /* Section (Meet the Team)
 --------------------------------------------------*/
 
