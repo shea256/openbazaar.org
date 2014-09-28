@@ -5,7 +5,6 @@
 
 OpenBazaar is an open source project to create a decentralized network for commerce online—using Bitcoin—that has no fees and cannot be censored.
 
-
 - **Official Site:** https://openbazaar.org
 
 ## Support
