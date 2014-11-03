@@ -25,7 +25,7 @@
     div.className = 'fit-vids-style';
     div.innerHTML = '&shy;<style>         \
       .fluid-width-video-wrapper {        \
-         width: 100%;                     \
+         width: 80%;                     \
          position: relative;              \
          padding: 0;                      \
       }                                   \
@@ -35,7 +35,7 @@
       .fluid-width-video-wrapper embed {  \
          position: absolute;              \
          top: 0;                          \
-         left: 0;                         \
+         margin 0;                    \
          width: 100%;                     \
          height: 100%;                    \
       }                                   \
