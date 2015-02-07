@@ -1,0 +1,101 @@
+/*
+	jBar v2.0.0
+	URL: www.toddmotto.com
+*/
+
+/*------------------------------------*\
+    jBar
+\*------------------------------------*/
+
+.jbar {
+	font-family:inherit; /* inherit your fonts */
+	background:rgba(0, 120, 255, 1);
+	border-bottom:3px solid #FFF;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:998; /* set high to avoid possible existing z-indexes */
+	width:100%;
+}
+.jbar,
+.jbar-push {
+	display:none;
+	transition:margin-top .25s linear;
+	-webkit-transition:margin-top .25s linear;
+	-moz-transition:margin-top .25s linear;
+}
+.jbar-wrap {
+	padding:0 25px;
+	margin:8px 0;
+	text-align:center;
+}
+.jbar p {
+	margin:0;
+	padding:0;
+	font-size:14px;
+}
+.jbar p,
+.jbar-button {
+	color:#FFF;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+.jbar-button {
+	background:#333;
+	text-decoration:none;
+	margin:0 10px;
+	padding:5px 15px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+.jbar-button:hover {
+	background:#222;
+}
+.jbar-up-toggle {
+	position:absolute;
+	top:0;
+	right:50px;
+	display:block;
+	padding:10px;
+}
+.jbar-down-toggle {
+	visibility:hidden;
+	position:fixed;
+	top:100px;
+	right:0px;
+	z-index:999;
+	display:block;
+	padding:22px;
+    border: 2px solid #fff;
+    border-right: none;
+	background:rgba(0, 120, 255, 1);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	transition:margin-top .15s linear;
+	-webkit-transition:margin-top .15s linear;
+	-moz-transition:margin-top .15s linear;
+}
+.jbar-down-toggle:before {
+   content:  "\f12a";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 18px;
+    position: absolute;
+    top: 10px;
+    left: 0;   
+}
+
+.jbar-down-arrow {
+	position: relative;
+}
+.jbar-down-arrow:before {
+    
+}
