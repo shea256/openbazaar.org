@@ -1,129 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>OpenBazaar Team</title>
     <link rel="stylesheet" href="assets/css/style-2.css">
-      
     <link rel="shortcut icon" href="assets/img/favicon.png">
+    <script type="text/javascript">
+    (function(doc){
+        /* Load onename.js */
+        var js, id = 'onenamejs', ref = doc.getElementsByTagName('script')[0];
+        if (doc.getElementById(id)) {return;}
+        js = doc.createElement('script'); js.id = id;
+        js.src = 'https://s3.amazonaws.com/onename/onename.js';
+        //js.src = '/static/scriptdev/onename.js';
+        doc.head.appendChild(js);
+
+        /* Load onename.css */
+        var link, cssId = 'onenamecss';
+        if (doc.getElementById(cssId)) {return;}
+        link = document.createElement('link');
+        link.id = cssId; link.rel = 'stylesheet'; link.type = 'text/css';
+        link.href = 'https://s3.amazonaws.com/onename/onename.css';
+        //link.href = '/static/styles/onename.css';
+        doc.head.appendChild(link);
+    }(document));
+    </script>
+    <style type="text/css">
+      .openname-user {
+        display: inline-block;
+        float: left;
+      }
+      .openname-user-list {
+        display: table;
+        margin-left: -5px;
+      }
+      #team-members {
+        margin: auto;
+      }
+      @media screen and (max-width: 640px){
+        #team-members {
+          max-width: 210px;
+        }
+      }
+      @media screen and (min-width: 640px){
+        #team-members {
+          max-width: 420px;
+        }
+      }
+      @media screen and (min-width: 768px){
+        #team-members {
+          max-width: 630px;
+        }
+      }
+      @media screen and (min-width: 1024px){
+        #team-members {
+          max-width: 840px;
+        }
+      }
+    </style>
   </head>
-  
   <body class="bg">
-
-        <section id="meet-the-team" class="section-padding">
-
+    <section id="meet-the-team" class="section-padding">
       <div class="container">
-
-
         <h1>Meet the team</h1>
-
-
-        <div id="team-members">
-
-          <div class="team-member one-third column">
-
-            <div class="thumbnail"></div>
-
-            <h2>Brian Hoffman</h2>
-
-            <p><em>Project Lead</em></p>
-
-              <a href="https://onename.io/brianhoffman" target="_blank">onename.io</a>
-          </div><!-- end .team-member -->
-
-        <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-          <h2>Sam Patterson</h2>
-
-          <p><em>Operations Lead</em></p>
-            
-             <a href="https://onename.io/sampatt" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-
-    
-        <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-          <h2>Washington Sanchez</h2>
-
-          <p><em>OB Labs Lead</em></p>
-
-             <a href="https://onename.io/drwasho" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-            
-             <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-            <h2>Braden Glasgow</h2>
-
-          <p><em>Web Development Lead</em></p>
-            
-            <a href="https://onename.io/bglassy" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-
-
-        <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-          <h2>Dionysis Zindros</h2>
-
-          <p><em>Developer</em></p>
-             
-            <a href="https://onename.io/dionyziz" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-
-
-        <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-          <h2>Angel Leon</h2>
-
-          <p><em>Developer/Architect</em></p>
-
-             <a href="https://onename.io/gubatron" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-            
-        <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-          <h2>Mike Wolf</h2>
-
-          <p><em>Front-End Designer</em></p>
-
-             <a href="https://onename.io/mikewolf" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-        
-         <div class="team-member">
-
-          <div class="thumbnail"></div>
-
-
-          <h2>Nikolaos Korasidis </h2>
-
-          <p><em>Developer</em></p>
-
-             <a href="https://onename.io/renelvon" target="_blank">onename.io</a>
-        </div><!-- end .team-member -->
-            
-      </div><!-- end #team-members -->
-
-
+        <div class="row">
+          <div id="team-members" class=" col-md-6">
+              <div class="openname-user" data-openname="brianhoffman" data-summary="Project Lead"></div>
+              <div class="openname-user" data-openname="sampatt" data-summary="Operations Lead"></div>
+              <div class="openname-user" data-openname="drwasho" data-summary="OB Labs Lead"></div>
+              <div class="openname-user" data-openname="bglassy" data-summary="OBDN Lead &amp; Senior Web Developer"></div>
+              <div class="openname-user" data-openname="dionyziz" data-summary="Developer"></div>
+              <div class="openname-user" data-openname="gubatron" data-summary="Developer/Architect"></div>
+              <div class="openname-user" data-openname="renelvon" data-summary="Developer"></div>
+          </div><!-- end #team-members -->
+        </div>
       </div><!-- end .container -->
-
     </section><!-- end #meet-the-team -->
-    
   </body>
 </html>
